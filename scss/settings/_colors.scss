@@ -1,0 +1,137 @@
+/**
+ * Name: 2023 ADS Color Palette for SASS/SCSS - Alza.cz
+ * Version: 1.1
+ * Author: Filip Syřínek - filip.syrinek@alza.cz
+ * Dependencies: none
+ * Usage: 
+ *  1. Import this file to desired scss
+ *  2. Use color(color, variation) function to get corresponding ADS Color
+ * Example usage:
+ *   @import "assets/colors";
+ *   .selector {
+ *       background-color: color(pet);
+ *       background-color: color(blue, 500);
+ *   }
+ */
+
+$alza-colors: (
+    'alza': #00275b,
+    'sport': #a1c900,
+    'media': #0094e7,
+    'toys': #fd7528,
+    'maxi': #e9242e,
+    'trendy': #c7b276,
+    'hobby': #764510,
+    'automoto': #262F38,
+    'pet': #cb8f10,
+    'white': #fff,
+    'grey': #F4F5F5
+);
+
+$ads-color-palette: (
+    gray: (
+        0: #ffffff,
+        1: #F8F8F8,
+        2: #F4F5F5,
+        3: #E0E0E0,
+        4: #C6C6C6,
+        5: #A4A4A4,
+        6: #505050,
+        7: #383838,
+        8: #212121,
+        9: #000000
+    ),
+
+    blue: (
+        50: #F9FBFD,
+        100: #ECF5FE,
+        300: #BFDAEE,
+        500: #0094E7,
+        700: #0383CB
+    ),
+
+    green: (
+        100: #F2FDE5,
+        500: #A1C900,
+        700: #689700,
+        900: #5C7E10
+    ),
+
+    yellow: (
+        100: #FFF9D7,
+        700: #FFD538
+    ),
+
+    orange: (
+        100: #FFF3EC,
+        500: #F29400,
+        700: #FD7528
+    ),
+
+    red: (
+        100: #FFEEEE,
+        500: #E9242E,
+        700: #C91F28
+    ),
+
+    brown: (
+        100: #FAF6F2,
+        500: #916A3F,
+        700: #764510
+    ),
+
+    brand-primary: (
+        default: #00275B,
+        light: #1653A4
+    ),
+
+    discount: (
+        default: #FDF988
+    ),
+
+    gray-primary-light: (
+        default: #4F5B68
+    ),
+
+    auto-gray-primary: (
+        default: #262F38
+    ),
+
+    beauty: (
+        default: #B7A265
+    ),
+
+    pet: (
+        default: #CB8F10
+    ),
+
+    b2b: (
+        default: #43BD9E
+    ),
+
+    alza-premium: (
+        default: #AF1528
+    ), 
+
+    lp: (
+        light: #F5F5F7,
+    )
+);
+
+
+@function color($color, $variation:default) {
+    @if map-has-key($ads-color-palette,$color) {
+
+        $color-hex: map-get($ads-color-palette,$color);
+            @if map-has-key($color-hex,$variation) {
+                $variation: map-get($color-hex,$variation);
+                @return $variation;
+            }
+
+            @error 'Variation "#{$variation}" for color "#{$color}" is not defined. All available variations for this color - "#{map-get($ads-color-palette,$color)}"';
+            @return null;
+    }
+
+    @error 'Color "#{$color}" is not defined. All available colors - "#{map-keys($ads-color-palette)}"';
+    @return null;
+}

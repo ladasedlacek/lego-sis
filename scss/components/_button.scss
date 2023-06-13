@@ -1,0 +1,20 @@
+#landingpage{
+    .lpBtn{
+        background-color: color(gray, 9);
+        border-radius: 100px;
+        text-align: center;
+        color: color(gray, 0);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 40px;
+        padding: 0 16px;
+        display: table;
+        margin: 30px auto 0;
+        font-family: 'SamsungSharpSans Bold';
+
+        &--white{
+            background-color: color(gray, 0);
+            color: color(gray, 9);
+        }
+    }
+}

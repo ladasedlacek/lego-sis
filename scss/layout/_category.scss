@@ -1,0 +1,13 @@
+#landingpage{
+    .lpCategory{
+        .lpBox{
+            background-color: color(gray, 9);
+
+            &__contentWrapper{
+                .hdl4{
+                    color: color(gray, 0);
+                }
+            }
+        }
+    }
+}
