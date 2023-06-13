@@ -60,7 +60,7 @@ html{
     overflow: hidden;
     position: relative;
     display: block;
-    background-color: color(gray, 0);
+    background-color: color(lp, dark);
 
     // svg hidden
     .hidden{
@@ -71,7 +71,7 @@ html{
     section,
     header,
     footer{
-        * {
+        *:not(.react-carousel *){
             box-sizing: border-box;
         }
     }

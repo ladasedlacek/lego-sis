@@ -1,20 +1,3 @@
-// samsung fonts
-@font-face {
-    font-family: 'SamsungSharpSans';
-    src: url('https://cdn.alza.cz/Foto/or/lp/samsung/launch-a/fonts/samsungsharpsans.woff') format('woff'),
-            url('https://cdn.alza.cz/Foto/or/lp/samsung/launch-a/fonts/samsungsharpsans.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SamsungSharpSans Bold';
-    src: url('https://cdn.alza.cz/Foto/or/lp/samsung/launch-a/fonts/samsungsharpsansbold.woff') format('woff'),
-            url('https://cdn.alza.cz/Foto/or/lp/samsung/launch-a/fonts/samsungsharpsansbold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
 // size mixin
 @function size($value) {
     $style: ($value / 16) + rem;	
@@ -33,9 +16,9 @@
     .hdl3,
     .hdl4{
         font-weight: 700;
-        font-family: 'SamsungSharpSans Bold';
+        @include roboto();
         display: block;
-        color: color(gray, 9);
+        color: color(gray, 0);
         margin: 0;
     }
     
@@ -60,8 +43,8 @@
     }
         
     .hdl3{
-        font-size: size(24);
-        line-height: size(36);
+        font-size: size(30);
+        line-height: size(40);
     }
 
     .hdl4{
@@ -73,31 +56,33 @@
     p,
     a,
     li,
+    span:not(.react-carousel span),
     .perex,
     .body-1,
     .body-2,
     .listItems{
         display: block;
         font-weight: 400;
-        font-family: 'SamsungSharpSans';
-        color: color(gray, 9);
+        @include roboto();
+        color: color(gray, 0);
         margin: 0;
+    }
 
+    .perex,
+    .body-1,
+    .body-2,
+    .listItems{
         &--link{
             display: inline-block;
             font-weight: 400;
-            font-family: 'SamsungSharpSans';
+            @include roboto();
             text-decoration: underline;
-            color: color(blue, 500);
+            color: color(gray, 0);
             transition: .3s ease-in-out;
 
             &:hover{
-                color: darken($color: color(blue, 500), $amount: 6%);
+                color: darken($color: color(lp, yellow), $amount: 6%);
             }
-        }
-
-        strong{
-            font-family: 'SamsungSharpSans Bold';
         }
     }
 
@@ -105,7 +90,12 @@
     .perex--link{
         font-size: size(16);
         line-height: size(26);
-        color: color(gray, 6);
+        color: color(gray, 0);
+
+        sup{
+            font-size: size(12);
+            line-height: size(12);
+        }
     }
 
     .body-1,
@@ -113,12 +103,22 @@
     .body-1--link{
         font-size: size(14);
         line-height: size(24);
+
+        sup{
+            font-size: size(10);
+            line-height: size(10);
+        }
     }
 
     .body-2,
     .body-2--link{
         font-size: size(12);
         line-height: size(21);
+
+        sup{
+            font-size: size(8);
+            line-height: size(8);
+        }
     }
 
     .subHdl,
@@ -186,14 +186,6 @@
         }
     }
 
-    .fontNormal{
-        font-weight: 400;
-    }
-
-    .fontMedium{
-        font-weight: 500;
-    }
-
     .body-1--subHeadline,
     .perex--subHeadline{
         max-width: 75%;
@@ -206,11 +198,6 @@
     
     a{
         text-decoration: none;
-    }
-
-    sup{
-        font-size: size(10);
-        line-height: size(10);
     }
 }
 
@@ -238,6 +225,11 @@
             line-height: size(42);
         }
 
+        .hdl3{
+            font-size: size(24);
+            line-height: size(36);
+        }
+
         .subHdl,
         .subHdl--link{
             font-size: size(18);
@@ -246,16 +238,6 @@
 
         .body-1--subHeadline{
             max-width: 100%;
-        }
-    }
-}
-
-@media only screen and (max-width: 550px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
-        .hdl2{
-            font-size: size(30) !important;
-            line-height: size(42) !important;
         }
     }
 }
