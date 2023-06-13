@@ -27,6 +27,18 @@
         .btn{
             margin: 65px auto 0;
         }
+
+        &__video{
+            width: 70%;
+            margin: 65px auto 0;
+
+            iframe{
+                aspect-ratio: 16/9;
+                width: 100%;
+                border-radius: 4px;
+                border: 5px solid color(gray, 0);
+            }
+        }
     }
 }
 
@@ -52,6 +64,18 @@
         span.lpHowTo__number{
             margin-right: 0;
             margin-bottom: 5px;
+        }
+    }
+}
+
+// mobile
+@media only screen and (max-width: 980px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpHowTo{
+            &__video{
+                width: 100%;
+            }
         }
     }
 }

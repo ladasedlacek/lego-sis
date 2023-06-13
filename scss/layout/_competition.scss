@@ -1,0 +1,95 @@
+#landingpage{
+    .lpCompetition{
+        padding-top: 120px;
+
+        &__logo{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__astronaut,
+        &__astronaut-image{
+            margin: 65px auto 0;
+        }
+
+        .perex{
+            &--name{
+                color: color(lp, yellow);
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            &--number{
+                color: color(gray, 0);
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 1.5;
+            }
+        }
+
+        &__productInfo{
+            margin: 30px auto 0;
+        }
+
+        &__boxes{
+            margin: 65px auto 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 40px 20px;
+        }
+
+        &__box{
+            width: calc(33.33333% - 14px);
+
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+
+            figure{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: color(lp, lighten);
+                border-radius: 4px;
+                padding: 40px 20px;
+                width: 100%;
+                margin: 0;
+
+                img{
+                    width: 100%;
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media only screen and (max-width: 750px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpCompetition{
+            &__box{
+                width: calc(50% - 10px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpCompetition{
+            &__box{
+                width: 100%;
+            }
+        }
+    }
+}

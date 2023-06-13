@@ -125,7 +125,9 @@
     .subHdl--link{
         font-size: size(20);
         line-height: size(32);
-        color: color(gray, 6);
+        color: color(gray, 0);
+        opacity: .5;
+        margin: 20px auto 0;
     }
 
     // list items
