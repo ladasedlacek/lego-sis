@@ -2,6 +2,7 @@
     .lpCompetition{
         padding-top: 120px;
         position: relative;
+        z-index: 100;
 
         &__badge{
             position: absolute;
