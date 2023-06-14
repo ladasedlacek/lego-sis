@@ -1,7 +1,12 @@
 #landingpage{
     .lpProgram{
+        background-color: color(lp, lighten);
+        padding: 50px 0;
+
         &__image{
             position: absolute;
+            top: -8%;
+            left: 60px;
         }
 
         .lpGuest{

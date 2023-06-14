@@ -1,17 +1,24 @@
 #landingpage{
     .addPolygon{
-        background-color: color(lp, lighten);
-        clip-path: polygon(0 0,100% 4%,100% 100%,0 97%);
-        overflow: visible;
-    }
-}
+        &--top,
+        &--bottom{
+            background-color: color(lp, lighten);
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            left: 0;
+        }
 
-// mobile
-@media only screen and (max-width: 980px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
-        .addPolygon{
-            clip-path: polygon(0 0,100% 3%,100% 100%,0 98%);
+        &--top{
+            clip-path: polygon(0 0,100% 60%,100% 100%,0 100%);
+            top: 0;
+            transform: translateY(-100%);
+        }
+
+        &--bottom{
+            clip-path: polygon(0 0,100% 0,100% 100%,0 30%);
+            bottom: 0;
+            transform: translateY(100%);
         }
     }
 }
