@@ -14,21 +14,6 @@
             text-align: left;
             flex: 2;
             margin-left: 40px;
-
-            .perex{
-                &:first-of-type{
-                    color: color(lp, yellow);
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-top: 5px;
-                }
-
-                &:last-of-type{
-                    font-size: 18px;
-                    line-height: 30px;
-                    margin-top: 30px;
-                }
-            }
         }
     }
 }

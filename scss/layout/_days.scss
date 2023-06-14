@@ -2,5 +2,20 @@
     .lpDays{
         position: relative;
         z-index: 80;
+
+        &__badge{
+            position: absolute;
+        }
+
+        .lpGuest{
+            &__box{
+                .lpBoxText{
+                    .perex:last-of-type{
+                        margin: 30px auto 0;
+                        max-width: 80%;
+                    }
+                }
+            }
+        }
     }
 }
