@@ -1,0 +1,23 @@
+#landingpage{
+    .lpProgram{
+        &__image{
+            position: absolute;
+        }
+
+        .lpGuest{
+            &__box{
+                img{
+                    margin: 0 auto;
+                }
+
+                .lpBoxText{
+                    margin-top: 20px;
+
+                    .perex:last-of-type{
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}

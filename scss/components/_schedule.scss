@@ -1,0 +1,58 @@
+#landingpage{
+    .lpSchedule{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        &__left{
+            width: 60%;
+        }
+
+        &__right{
+            width: 35%;
+
+            img{
+                margin: 0 auto;
+            }
+        }
+
+        &__info{
+            text-align: left;
+
+            .perex.perex--headline{
+                font-weight: 700;
+            }
+    
+            .body-2{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// mobile
+@media only screen and (max-width: 750px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpSchedule{
+            flex-direction: column;
+
+            &__left{
+                width: 100%;
+                order: 2;
+            }
+    
+            &__right{
+                order: 1;
+                width: 100%;
+                margin-bottom: 40px;
+    
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

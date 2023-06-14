@@ -1,0 +1,84 @@
+#landingpage{
+    .lpTimeline{
+        text-align: left;
+
+        .lpItems{
+            margin-top: 0;
+
+            &__item{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-color: color(lp, yellow);
+                    width: 2px;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 8px;
+                    height: calc(100% + 1px);
+                    z-index: 10;
+                }
+
+                &:first-of-type::before{
+                    top: 10px;
+                }
+
+                &:last-of-type::before{
+                    height: 20px;
+                }
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-left: 0;
+                margin-top: 0;
+                padding-bottom: 20px;
+
+                .hdl4{
+                    flex: 0 0 100px;
+                }
+
+                .perex{
+                    transform: translateY(3px);
+                    flex: 1;
+                }
+            }
+
+            &__bullet{
+                width: 18px;
+                height: 18px;
+                background-color: color(gray, 0);
+                position: relative;
+                border-radius: 100px;
+                transform: translateY(5px);
+                margin-right: 50px;
+                position: relative;
+                z-index: 20;
+
+                &::before{
+                    content: '';
+                    @include center;
+                    width: 10px;
+                    height: 10px;
+                    background-color: color(lp, yellow);
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media only screen and (max-width: 750px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpTimeline{
+            .lpItems{
+                &__bullet{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

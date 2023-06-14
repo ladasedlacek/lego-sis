@@ -8,11 +8,14 @@
 
 // layout
 @import "layout/header";
+@import "layout/program";
 @import "layout/days";
 @import "layout/showroom";
 @import "layout/competition";
 
 // components
+@import "components/timeline";
+@import "components/schedule";
 @import "components/usp";
 @import "components/invite";
 @import "components/kits";
