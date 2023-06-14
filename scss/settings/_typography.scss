@@ -128,6 +128,7 @@
         color: color(gray, 0);
         opacity: .5;
         margin: 20px auto 0;
+        max-width: 65%;
     }
 
     // list items
@@ -194,6 +195,11 @@
         margin: 20px auto 0;
     }
 
+    .perex--short{
+        max-width: 75%;
+        margin: 40px auto 0;
+    }
+
     strong{
         font-weight: 700;
     }
@@ -236,6 +242,7 @@
         .subHdl--link{
             font-size: size(18);
             line-height: size(30);
+            max-width: 100%;
         }
 
         .body-1--subHeadline{

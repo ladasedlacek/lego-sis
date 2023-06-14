@@ -1,0 +1,57 @@
+#landingpage{
+    .lpInvite{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        picture{
+            flex: 1;
+        }
+
+        &__textWrapper{
+            text-align: left;
+            flex: 2;
+            margin-left: 40px;
+
+            .perex{
+                &:first-of-type{
+                    color: color(lp, yellow);
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-top: 5px;
+                }
+
+                &:last-of-type{
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media only screen and (max-width: 750px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpInvite{
+            display: block;
+    
+            picture{
+                width: 100%;
+                
+                img{
+                    margin: 0 auto;
+                }
+            }
+    
+            &__textWrapper{
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }
+    }
+}

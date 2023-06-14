@@ -1,0 +1,15 @@
+#landingpage{
+    .sectionMargin{
+        margin: 65px auto 0;
+    }
+}
+
+// mobile
+@media only screen and (max-width: 700px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .sectionMargin{
+            margin: 45px auto 0;
+        }
+    }
+}

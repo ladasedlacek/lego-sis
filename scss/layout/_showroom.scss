@@ -1,0 +1,14 @@
+#landingpage{
+    .lpShowroom{
+        padding: 200px 0;
+        background-color: color(lp, lighten);
+        position: relative;
+
+        &__badge{
+            position: absolute;
+            top: -12%;
+            left: 5%;
+            z-index: 10;
+        }
+    }
+}

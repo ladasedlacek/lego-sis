@@ -1,0 +1,14 @@
+#landingpage{
+    .lpPhotos{
+        position: relative;
+
+        &__star{
+            @include center;
+            z-index: 10;
+        }
+
+        &__photo{
+            border-radius: 4px;
+        }
+    }
+}

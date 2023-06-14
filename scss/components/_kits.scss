@@ -1,0 +1,77 @@
+#landingpage{
+    .lpKits{
+        &__box{
+            &:hover{
+                figure img{
+                    transform: scale(1.1);
+                }
+
+                .perex{
+                    color: color(lp, yellow);
+                }
+            }
+
+            &:nth-of-type(2){
+                transform: translateY(60px);
+            }
+
+            &:nth-of-type(3){
+                transform: translateY(-60px);
+            }
+
+            figure{
+                margin: 0 auto;
+                background-color: color(lp, dark);
+                padding: 20px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1/1;
+
+                picture{
+                    aspect-ratio: 1/1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-height: 280px;
+                    height: 100%;
+                }
+                
+                img{
+                    transition: .3s ease-in-out;
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .perex{
+                font-weight: 700;
+                margin-top: 30px;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+
+    .lpKits.sectionMargin{
+        margin: 140px auto 0;
+    }
+}
+
+// mobile
+@media only screen and (max-width: 700px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpKits{
+            &__box{
+                &:nth-of-type(2){
+                    transform: translateY(0);
+                }
+    
+                &:nth-of-type(3){
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

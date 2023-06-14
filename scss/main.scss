@@ -8,9 +8,18 @@
 
 // layout
 @import "layout/header";
+@import "layout/showroom";
 @import "layout/competition";
-@import "layout/howto";
-@import "layout/grid";
 
 // components
-@import "components/banner";
+@import "components/usp";
+@import "components/invite";
+@import "components/kits";
+@import "components/photos";
+@import "components/process";
+@import "components/video";
+
+// features
+@import "features/polygon";
+@import "features/margin";
+@import "features/grid";

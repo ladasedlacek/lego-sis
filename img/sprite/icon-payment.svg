@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Vrstva_1" data-name="Vrstva 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fdb724;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g>
+      <path class="cls-4" d="m6.15,57.55c0,.17.03.33.1.49.06.15.16.3.28.41.12.12.26.21.41.28.15.06.32.1.49.1h49.15c.17,0,.33-.03.49-.1.15-.06.3-.16.41-.28.12-.12.21-.26.28-.41.06-.15.1-.32.1-.49v-10.16H6.15v10.16Z"/>
+      <path class="cls-4" d="m29.93,5.17H12.1v8.26h17.83V5.17Z"/>
+      <path class="cls-4" d="m21.02,13.43v5.14"/>
+      <path class="cls-4" d="m6.79,41.47l-.64,5.92h51.7v-6.18l-2.6-7.9-2-14.75H10.73l-2,14.75-1.94,8.15Z"/>
+      <path class="cls-4" d="m48.41,22.98H15.57l-1.54,11.4h35.93l-1.54-11.4Z"/>
+      <path class="cls-4" d="m12.88,53.11h17.06"/>
+      <path class="cls-3" d="m51.38,53.11h.25"/>
+      <path class="cls-3" d="m41.48,38.72h.18"/>
+      <path class="cls-3" d="m48.61,38.72h.18"/>
+      <path class="cls-3" d="m41.11,42.72h.18"/>
+      <path class="cls-3" d="m48.98,42.72h.18"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+#landingpage{
+    .lpGrid-2,
+    .lpGrid-3,
+    .lpGrid-4{
+        display: grid;
+        gap: 20px;
+    }
+
+    .lpGrid-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lpGrid-3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lpGrid-4{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// media
+@media only screen and (max-width: 700px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpGrid-2,
+        .lpGrid-3,
+        .lpGrid-4{
+            gap: 20px 10px;
+        }
+
+        .lpGrid-3{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .lpGrid-4{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpGrid-2{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpGrid-4{
+            grid-template-columns: 1fr;
+        }
+    }
+}
