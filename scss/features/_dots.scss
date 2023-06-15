@@ -1,0 +1,16 @@
+#landingpage{
+    .lpDots{
+        position: absolute;
+        top: 50%;
+
+        &--right{
+            transform: translate(50%, -50%);
+            right: 0;
+        }
+
+        &--left{
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+    }
+}

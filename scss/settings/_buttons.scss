@@ -4,7 +4,7 @@
     height: $value + px;
 }
 
-#landingpage .btn{
+#landingpage.lp .btn{
     display: table;
     padding: 0 15px;
     border-radius: 4px;
@@ -63,13 +63,13 @@
     }
 }
 
-#landingpage .btn--big .btn-text{
+#landingpage.lp .btn--big .btn-text{
     font-size: 20px;
 }
 
 // extend all buttons class for each color
 @each $name, $hex in $alza-colors {
-    #landingpage .btn--#{$name}{
+    #landingpage.lp .btn--#{$name}{
         @extend .btn;
         background: $hex;
 
@@ -86,7 +86,7 @@
 }
 
 // white and gray version of button
-#landingpage .btn--white .btn-text,
-#landingpage .btn--gray .btn-text{
+#landingpage.lp .btn--white .btn-text,
+#landingpage.lp .btn--gray .btn-text{
     color: color(gray, 8);
 }

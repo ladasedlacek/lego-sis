@@ -1,4 +1,4 @@
-#landingpage{
+#landingpage.lp{
     .lpInvite{
         display: flex;
         justify-content: space-between;
@@ -20,8 +20,8 @@
 
 // mobile
 @media only screen and (max-width: 750px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
         .lpInvite{
             display: block;
     

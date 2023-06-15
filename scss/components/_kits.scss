@@ -1,4 +1,4 @@
-#landingpage{
+#landingpage.lp{
     .lpKits{
         &__box{
             &:hover{
@@ -60,8 +60,8 @@
 
 // mobile
 @media only screen and (max-width: 700px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
         .lpKits{
             &__box{
                 &:nth-of-type(2){

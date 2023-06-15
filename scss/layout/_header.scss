@@ -2,15 +2,217 @@
     .lpHeader{
         background: url('https://cdn.alza.cz/Foto/or/lp/lego-sis/build/img/background.png') center no-repeat;
         background-size: cover;
+        padding: 100px 0 0;
+        position: relative;
+        
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            padding-bottom: 120px;
+        }
+
+        &__textWrapper{
+            text-align: left;
+            width: calc(50% - 10px);
+
+            .hdl4{
+                position: relative;
+                padding-left: 100px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 80px;
+                    height: 1px;
+                    top: 50%;
+                    left: 0;
+                    background-color: color(lp, yellow);
+                }
+            }
+
+            .subHdl{
+                margin: 50px 0 0;
+                opacity: 1;
+                font-size: 18px;
+                line-height: 28px;
+                max-width: 100%;
+
+                sup{
+                    font-size: 10px;
+                }
+            }
+
+            .lpItems{
+                margin-top: 50px;
+
+                &__item{
+                    margin-top: 10px;
+
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+
+                    &::before{
+                        background: url('https://cdn.alza.cz/Foto/or/lp/lego-sis/build/img/bullet.svg') center no-repeat;
+                        background-size: cover;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+
+        &__headline{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &__logo{
+            margin-right: 20px;
+        }
+
+        &__imageWrapper{
+            width: calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__icons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        &__aeroplane{
+            margin-top: 120px;
+            transform: translateY(30%);
+        }
+
+        &__figurines{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: 100px;
+            transform: translateY(20%);
+        }
+
+        &__figurine--1{
+            transform: translateY(50px);
+        }
+
+        &__figurine--2{
+            margin-right: 50px;
+        }
+    }
+}
+
+// layout 0
+.layout-0 #landingpage{
+    .lpHeader{
+        padding-bottom: 80px;
+
+        .hdl4{
+            padding-left: 0;
+        }
+
+        .hdl4::before{
+            display: none;
+        }
+
+        &__figurines{
+            transform: translateY(50%);
+        }
     }
 }
 
 // media
+@media only screen and (max-width: 980px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpHeader{
+            padding-bottom: 80px;
+    
+            .hdl4{
+                padding-left: 0;
+            }
+    
+            .hdl4::before{
+                display: none;
+            }
+    
+            &__figurines{
+                transform: translateY(50%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpHeader{
+            padding-top: 50px;
+            padding-bottom: 0;
+            
+            &__container{
+                display: block;
+            }
+
+            &__textWrapper{
+                width: 100%;
+            }
+
+            &__imageWrapper{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            &__icons,
+            &__aeroplane{
+                display: none;
+            }
+
+            &__figurines{
+                margin-top: 0;
+                transform: translateY(20%);
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 550px){
     .mobile #landingpage,
     .mobileapp #landingpage{
         .lpHeader{
-            
+            &__headline{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__logo{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            &__textWrapper{
+                .hdl4{
+                    letter-spacing: 5px;
+                }
+            }
         }
     }
 }

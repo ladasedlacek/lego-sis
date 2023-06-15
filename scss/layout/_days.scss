@@ -1,12 +1,31 @@
-#landingpage{
+#landingpage.lp{
     .lpDays{
         position: relative;
         z-index: 80;
+
+        .react-carousel.blockMargin{
+            margin: 65px auto 50px;
+        }
 
         &__badge{
             position: absolute;
             left: 60px;
             top: 0;
+        }
+    }
+}
+
+// media
+@media only screen and (max-width: 750px){
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
+        .lpDays{
+            &__badge{
+                position: relative;
+                left: auto;
+                top: auto;
+                margin: 0 auto 40px;
+            }
         }
     }
 }

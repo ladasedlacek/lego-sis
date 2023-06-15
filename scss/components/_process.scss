@@ -1,4 +1,4 @@
-#landingpage{
+#landingpage.lp{
     .lpProcess{
         &__box{
             padding: 30px 100px 30px 25px;
@@ -21,7 +21,7 @@
 }
 
 // laoyut 0
-.layout-0 #landingpage{
+.layout-0 #landingpage.lp{
     .lpProcess{
         text-align: center;
 
@@ -44,7 +44,7 @@
 // mobile
 @media only screen and (max-width: 980px){
     .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobileapp #landingpage.lp{
         .lpProcess{
             &__box{
                 padding: 30px;
@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 700px){
     .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobileapp #landingpage.lp{
         .lpProcess{
             &__box{
                 padding: 20px 20px 50px;

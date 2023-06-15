@@ -9,7 +9,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#landingpage{
+#landingpage.lp{
     // headlines
     .notMoveH1,
     .hdl2,
@@ -24,7 +24,22 @@
     
     .notMoveH1{
         font-size: size(50);
-        line-height: size(66);
+        line-height: size(62);
+        font-weight: 400;
+        color: color(lp, yellow);
+
+        strong{
+            font-size: size(70);
+            line-height: size(62);
+            font-weight: 500;
+            -webkit-text-stroke: 2px color(lp, yellow);
+            -webkit-text-fill-color: transparent;
+        }
+
+        sup{
+            font-size: 40px;
+            vertical-align: super;
+        }
     }
 
     .notMoveH1.h1B{
@@ -95,6 +110,7 @@
         sup{
             font-size: size(12);
             line-height: size(12);
+            vertical-align: super;
         }
     }
 
@@ -107,6 +123,7 @@
         sup{
             font-size: size(10);
             line-height: size(10);
+            vertical-align: super;
         }
     }
 
@@ -118,6 +135,7 @@
         sup{
             font-size: size(8);
             line-height: size(8);
+            vertical-align: super;
         }
     }
 
@@ -208,7 +226,7 @@
 }
 
 // layout 0
-.layout-0 #landingpage{
+.layout-0 #landingpage.lp{
     .notMoveH1,
     .notMoveH1.h1B{
         font-size: size(40);
@@ -218,8 +236,8 @@
 
 // media
 @media only screen and (max-width: 980px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
         .notMoveH1,
         .notMoveH1.h1B{
             font-size: size(40);
@@ -250,10 +268,22 @@
 }
 
 @media only screen and (max-width: 700px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
         .perex--short{
             max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .mobile #landingpage.lp,
+    .mobileapp #landingpage.lp{
+        .notMoveH1{
+            strong{
+                font-size: size(55);
+                line-height: size(65);
+            }
         }
     }
 }
