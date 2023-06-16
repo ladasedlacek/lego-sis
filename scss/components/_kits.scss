@@ -1,6 +1,8 @@
 #landingpage.lp{
     .lpKits{
         &__box{
+            opacity: 0;
+
             &:hover{
                 figure img{
                     transform: scale(1.1);
@@ -11,12 +13,20 @@
                 }
             }
 
+            &:nth-of-type(1){
+                animation: slide-down .4s ease-in forwards;
+            }
+
             &:nth-of-type(2){
-                transform: translateY(60px);
+                animation: slide-down-kit-2 .4s ease-in forwards;
             }
 
             &:nth-of-type(3){
-                transform: translateY(-60px);
+                animation: slide-down-kit-3 .4s ease-in forwards;
+            }
+
+            &:nth-of-type(4){
+                animation: slide-down .4s ease-in forwards;
             }
 
             figure{

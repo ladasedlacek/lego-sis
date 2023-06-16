@@ -2,7 +2,7 @@
     .lpHeader{
         background: url('https://cdn.alza.cz/Foto/or/lp/lego-sis/build/img/background.png') center no-repeat;
         background-size: cover;
-        padding: 100px 0 0;
+        padding: 70px 0 0;
         position: relative;
         
         &__container{
@@ -10,6 +10,8 @@
             justify-content: space-between;
             align-items: stretch;
             padding-bottom: 120px;
+            opacity: 0;
+            animation: container .6s ease-in forwards;
         }
 
         &__textWrapper{
@@ -97,9 +99,24 @@
             width: 100%;
         }
 
+        &__icon{
+            opacity: 0;
+
+            &:nth-of-type(1){
+               animation: pop .33s .8s ease-in forwards;
+            }
+            &:nth-of-type(2){
+               animation: pop .33s 1s ease-in forwards;
+            }
+            &:nth-of-type(3){
+               animation: pop .33s 1.2s ease-in forwards;
+            }
+        }
+
         &__aeroplane{
             margin-top: 120px;
             transform: translateY(30%);
+            animation: float 6s ease-in-out infinite;
         }
 
         &__figurines{
@@ -111,11 +128,15 @@
         }
 
         &__figurine--1{
-            transform: translateY(50px);
+            opacity: 0;
+            margin-right: 50px;
+            animation: figurine-1 .7s .8s ease-in forwards;
         }
 
         &__figurine--2{
-            margin-right: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: figurine-2 .5s 1.15s ease-in forwards;
         }
     }
 }
@@ -124,6 +145,11 @@
 .layout-0 #landingpage{
     .lpHeader{
         padding-bottom: 80px;
+        
+        &__logo{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
 
         .hdl4{
             padding-left: 0;
@@ -145,6 +171,11 @@
     .mobileapp #landingpage{
         .lpHeader{
             padding-bottom: 80px;
+
+            &__logo{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
     
             .hdl4{
                 padding-left: 0;

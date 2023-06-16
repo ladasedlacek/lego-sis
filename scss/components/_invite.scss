@@ -8,6 +8,10 @@
 
         picture{
             flex: 1;
+
+            img{
+                animation: float 6s ease-in-out infinite;
+            }
         }
 
         &__textWrapper{

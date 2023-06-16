@@ -1,0 +1,117 @@
+#landingpage{
+    @keyframes container {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+
+    @keyframes pop{
+        0% {
+            opacity: 1;
+            filter: blur(20px);
+            transform: scale(.6)
+        }
+        50% {
+            transform: scale(1.08)
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+            filter: blur(0);
+        }
+    }
+
+    @keyframes pop-star{
+        0% {
+            opacity: 1;
+            filter: blur(20px);
+            transform: translate(-50%,-50%) scale(.6);
+        }
+        50% {
+            transform: translate(-50%,-50%) scale(1.08);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+            filter: blur(0);
+        }
+    }
+
+    @keyframes figurine-1 {
+        0% {
+            transform: translatey(40px);
+            opacity: 0;
+        }
+        50% {
+            transform: translatey(-30px);
+        }
+        100% {
+            transform: translatey(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes figurine-2 {
+        0% {
+            transform: translatey(70px);
+            opacity: 0;
+        }
+        50% {
+            transform: translatey(20px);
+        }
+        100% {
+            transform: translatey(50px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-down {
+        0% {
+            transform: translatey(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translatey(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-down-kit-2 {
+        0% {
+            transform: translatey(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translatey(60px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-down-kit-3 {
+        0% {
+            transform: translatey(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translatey(-60px);
+            opacity: 1;
+        }
+    }
+}

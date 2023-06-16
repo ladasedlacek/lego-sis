@@ -7,14 +7,21 @@
             margin: 65px auto 50px;
         }
 
-        &__badge{
+        &__image{
             position: absolute;
             left: 60px;
             top: 0;
+            animation: float 6s ease-in-out infinite;
         }
 
         &__alzak{
             border-radius: 4px;
+            opacity: 0;
+            animation: pop .33s ease-in forwards;
+        }
+
+        .btn{
+            margin: 30px auto 0;
         }
     }
 }

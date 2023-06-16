@@ -39,6 +39,7 @@
         sup{
             font-size: 40px;
             vertical-align: super;
+            -webkit-text-stroke: 1px color(lp, yellow);
         }
     }
 
@@ -101,8 +102,7 @@
         }
     }
 
-    .perex,
-    .perex--link{
+    .perex{
         font-size: size(16);
         line-height: size(26);
         color: color(gray, 0);
@@ -115,8 +115,7 @@
     }
 
     .body-1,
-    .body-1--item,
-    .body-1--link{
+    .body-1--item{
         font-size: size(14);
         line-height: size(24);
 
@@ -127,8 +126,7 @@
         }
     }
 
-    .body-2,
-    .body-2--link{
+    .body-2{
         font-size: size(12);
         line-height: size(21);
 
@@ -139,14 +137,30 @@
         }
     }
 
-    .subHdl,
-    .subHdl--link{
+    .subHdl{
         font-size: size(20);
         line-height: size(32);
         color: color(gray, 0);
         opacity: .5;
         margin: 20px auto 0;
         max-width: 65%;
+
+        &--link{
+            text-decoration: underline;
+            transition: .3s ease-in-out;
+            display: inline;
+            font-size: inherit;
+
+            &:hover{
+                color: color(lp, yellow);
+                opacity: 1;
+            }
+        }
+
+        sup{
+            font-size: size(12);
+            vertical-align: super;
+        }
     }
 
     // list items
