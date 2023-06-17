@@ -13,22 +13,6 @@
                 }
             }
 
-            &:nth-of-type(1){
-                animation: slide-down .4s ease-in forwards;
-            }
-
-            &:nth-of-type(2){
-                animation: slide-down-kit-2 .4s ease-in forwards;
-            }
-
-            &:nth-of-type(3){
-                animation: slide-down-kit-3 .4s ease-in forwards;
-            }
-
-            &:nth-of-type(4){
-                animation: slide-down .4s ease-in forwards;
-            }
-
             figure{
                 margin: 0 auto;
                 background-color: color(lp, dark);
@@ -60,6 +44,24 @@
                 margin-top: 30px;
                 transition: .3s ease-in-out;
             }
+        }
+    }
+
+    .lpKits.runAnimation--active .lpKits__box{
+        &:nth-of-type(1){
+            animation: slide-down .4s ease-in forwards;
+        }
+
+        &:nth-of-type(2){
+            animation: slide-down-kit-2 .4s ease-in forwards;
+        }
+
+        &:nth-of-type(3){
+            animation: slide-down-kit-3 .4s ease-in forwards;
+        }
+
+        &:nth-of-type(4){
+            animation: slide-down .4s ease-in forwards;
         }
     }
 

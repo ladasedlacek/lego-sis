@@ -7,22 +7,33 @@
             margin: 65px auto 50px;
         }
 
-        &__image{
+        &__imageWrapper{
+            opacity: 0;
             position: absolute;
             left: 60px;
             top: 0;
+        }
+
+        &__image{
             animation: float 6s ease-in-out infinite;
         }
 
         &__alzak{
             border-radius: 4px;
             opacity: 0;
-            animation: pop .33s ease-in forwards;
         }
 
         .btn{
             margin: 30px auto 0;
         }
+    }
+
+    .lpDays__imageWrapper.runAnimation--active{
+        animation: pop .33s ease-in forwards;
+    }
+
+    .lpDays__alzak.runAnimation--active{
+        animation: pop .33s ease-in forwards;
     }
 }
 

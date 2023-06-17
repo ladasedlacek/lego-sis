@@ -10,8 +10,12 @@
             top: -12%;
             left: 5%;
             z-index: 91;
-            animation: pop .4s ease-in forwards;
+            opacity: 0;
         }
+    }
+
+    .lpShowroom__badge.runAnimation--active{
+        animation: pop .4s ease-in forwards;
     }
 }
 

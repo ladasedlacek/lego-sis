@@ -14,11 +14,19 @@
             }
         }
 
+        &__imageWrapper{
+            opacity: 0;
+        }
+
         &__textWrapper{
             text-align: left;
             flex: 2;
             margin-left: 40px;
         }
+    }
+
+    .lpInvite__imageWrapper.runAnimation--active{
+        animation: pop .33s ease-in forwards;
     }
 }
 

@@ -6,7 +6,6 @@
             @include center;
             z-index: 10;
             opacity: 0;
-            animation: pop-star .33s .8s ease-in forwards;
         }
 
         &__photo{
@@ -14,14 +13,20 @@
             border: 5px solid color(gray, 0);
             opacity: 0;
             width: 100%;
+        }
+    }
 
-            &--1{
-                animation: slide-down .4s ease-in forwards;
-            }
+    .lpPhotos.runAnimation--active{
+        .lpPhotos__star{
+            animation: pop-star .4s .5s ease-in forwards;
+        }
 
-            &--2{
-                animation: slide-down .4s .2s ease-in forwards;
-            }
+        .lpPhotos__photo--1{
+            animation: slide-down .4s ease-in forwards;
+        }
+
+        .lpPhotos__photo--2{
+            animation: slide-down .4s .2s ease-in forwards;
         }
     }
 }

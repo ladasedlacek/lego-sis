@@ -27,6 +27,10 @@
             }
         }
 
+        &__astronautContainer{
+            opacity: 0;
+        }
+
         &__productInfo{
             margin: 30px auto 0;
         }
@@ -39,7 +43,6 @@
             flex-wrap: wrap;
             gap: 40px 20px;
             opacity: 0;
-            animation: slide-down .4s ease-in forwards;
         }
 
         &__box{
@@ -67,6 +70,11 @@
                 }
             }
         }
+    }
+    
+    .lpCompetition__astronautContainer.runAnimation--active,
+    .lpCompetition__boxes.runAnimation--active{
+        animation: slide-down .4s ease-in forwards;
     }
 }
 

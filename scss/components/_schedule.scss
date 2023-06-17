@@ -12,6 +12,7 @@
 
         &__right{
             width: 35%;
+            opacity: 0;
 
             img{
                 margin: 0 auto;
@@ -29,6 +30,10 @@
                 margin-top: 30px;
             }
         }
+    }
+
+    .lpSchedule__right.runAnimation--active{
+        animation: pop .4s ease-in forwards;
     }
 }
 
