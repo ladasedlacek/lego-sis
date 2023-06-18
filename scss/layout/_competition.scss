@@ -4,11 +4,14 @@
         position: relative;
         z-index: 100;
 
-        &__badge{
+        &__badgeWrapper{
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translateX(-50%);
+        }
+
+        &__badge{
             opacity: 0;
         }
 
@@ -71,6 +74,10 @@
             }
         }
     }
+
+    .lpCompetition__badge.runAnimation--active{
+        animation: pop .4s ease-in forwards;
+    }
     
     .lpCompetition__astronautContainer.runAnimation--active,
     .lpCompetition__boxes.runAnimation--active{
@@ -85,12 +92,16 @@
         .lpCompetition{
             padding-top: 100px;
 
-            &__badge{
+            &__badgeWrapper{
                 position: relative;
                 top: auto;
                 left: auto;
-                transform: translate(0,0);
                 margin: 0 auto 40px;
+                transform: translateX(0);
+            }
+
+            &__badge{
+                margin: 0 auto;
             }
             
             &__box{

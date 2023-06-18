@@ -57,8 +57,12 @@
     .mobileapp #landingpage{
         .lpProgram{
             padding: 0;
-            
+
             &__image{
+                margin: 0 auto;
+            }
+
+            &__imageWrapper{
                 position: relative;
                 margin: 0 auto 40px;
                 top: auto;

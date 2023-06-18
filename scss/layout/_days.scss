@@ -42,7 +42,11 @@
     .mobile #landingpage.lp,
     .mobileapp #landingpage.lp{
         .lpDays{
-            &__badge{
+            &__image{
+                margin: 0 auto;
+            }
+
+            &__imageWrapper{
                 position: relative;
                 left: auto;
                 top: auto;

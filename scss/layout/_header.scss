@@ -145,6 +145,11 @@
 .layout-0 #landingpage{
     .lpHeader{
         padding-bottom: 80px;
+
+        &__headline{
+            flex-direction: column;
+            align-items: flex-start;
+        }
         
         &__logo{
             margin-right: 0;
@@ -171,6 +176,11 @@
     .mobileapp #landingpage{
         .lpHeader{
             padding-bottom: 80px;
+
+            &__headline{
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             &__logo{
                 margin-right: 0;

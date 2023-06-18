@@ -71,19 +71,23 @@
 }
 
 // mobile
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 980px){
     .mobile #landingpage.lp,
     .mobileapp #landingpage.lp{
         .lpKits{
             &__box{
                 &:nth-of-type(2){
-                    transform: translateY(0);
+                    transform: translateY(0) !important;
                 }
     
                 &:nth-of-type(3){
-                    transform: translateY(0);
+                    transform: translateY(0) !important;
                 }
             }
+        }
+
+        .lpKits.blockMargin{
+            margin: 65px auto 0;       
         }
     }
 }
